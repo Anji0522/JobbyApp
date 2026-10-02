@@ -1,0 +1,86 @@
+/* Home Container */
+
+.home-container {
+  min-height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 8%;
+}
+
+/* Heading */
+
+.heading {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 650px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+/* Description */
+
+.description {
+  color: #e2e8f0;
+  font-size: 22px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+/* Button */
+
+.button {
+  background: #6366f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    align-items: center;
+    text-align: center;
+    padding: 40px 25px;
+  }
+
+  .heading {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .button {
+    width: 180px;
+    font-size: 16px;
+  }
+}

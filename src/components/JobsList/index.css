@@ -1,0 +1,159 @@
+.job-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.jobs-container {
+  width: 100%;
+  background-color: #272727;
+  border-radius: 18px;
+  padding: 28px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.jobs-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.25);
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+}
+
+.job-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.job-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star {
+  color: #fbbf24;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.rating {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.job-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.job-info {
+  display: flex;
+  gap: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.info-text {
+  color: #f1f5f9;
+  font-size: 16px;
+}
+
+.package {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #64748b;
+  margin: 22px 0;
+}
+
+.description-heading {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #d7dfe9;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .jobs-container {
+    padding: 18px;
+  }
+
+  .job-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+
+  .job-details-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .job-info {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .package {
+    font-size: 20px;
+  }
+
+  .description-heading {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

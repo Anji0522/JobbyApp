@@ -1,0 +1,244 @@
+.job-detailes-main-container {
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 30px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.details-container {
+  background-color: #202020;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.job-image {
+  width: 60px;
+  height: 60px;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.rating {
+  color: #fbbf24;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.location,
+.work-type,
+.job-type {
+  color: #cbd5e1;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.per-annum {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid #475569;
+  margin: 25px 0;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-heading,
+.skills-heading,
+.life-at-com,
+.heading-description {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.visit-card {
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.about-job {
+  margin-top: 20px;
+}
+
+.about-job p,
+.description {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.skills-container {
+  margin-top: 40px;
+}
+
+.list-items-skills {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item-container {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.skill-image {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-item-name {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.life-at-company-container {
+  margin-top: 40px;
+}
+
+.life-at-company-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.life-at-company-content p {
+  flex: 1;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.life-at-company-image img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.similar-job-container {
+  margin-top: 50px;
+}
+
+.similar-job-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.smilar-job-info {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+}
+
+.job-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.similar-job-image {
+  width: 55px;
+  height: 55px;
+}
+
+.job-name-and-ratin {
+  display: flex;
+  flex-direction: column;
+}
+
+.devloper-role-name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.similar-job-decription-content {
+  margin-top: 20px;
+}
+
+.similar-job-decription-content p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.other-info {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .job-detailes-main-container {
+    padding: 15px;
+  }
+
+  .details-container {
+    padding: 20px;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .job-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .life-at-company-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .life-at-company-image img {
+    width: 100%;
+  }
+
+  .similar-job-list {
+    flex-direction: column;
+  }
+
+  .smilar-job-info {
+    width: 100%;
+  }
+
+  .list-items-skills {
+    flex-direction: column;
+  }
+
+  .skill-item-container {
+    width: 100%;
+  }
+}
