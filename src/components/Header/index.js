@@ -10,7 +10,7 @@ const Header = ({history}) => {
   }
 
   return (
-    <nav className="nav-container">
+    <nav className="nav-container" aria-label="Main navigation">
       <Link to="/">
         <img
           className="website-logo"

@@ -97,8 +97,8 @@ const JobsList = props => {
     return (
       <ul className="job-list-container">
         {jobsList.map(job => (
-          <Link to={`/jobs/${job.id}`} className="job-link" key={job.id}>
-            <li className="jobs-container">
+          <li className="job-card" key={job.id}>
+            <Link to={`/jobs/${job.id}`} className="job-link">
               <div className="job-header">
                 <img
                   className="job-logo"
@@ -137,8 +137,8 @@ const JobsList = props => {
               <h2 className="description-heading">Description</h2>
 
               <p className="description">{job.jobDescription}</p>
-            </li>
-          </Link>
+            </Link>
+          </li>
         ))}
       </ul>
     )

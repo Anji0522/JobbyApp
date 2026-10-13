@@ -45,8 +45,8 @@ const Jobs = props => {
   return (
     <>
       <Header />
-      <div className="jobs-main-container">
-        <div className="jobs-container">
+      <main className="jobs-main-container">
+        <aside className="jobs-sidebar">
           <Profile />
           <hr />
           <TypeofEmployment
@@ -57,8 +57,8 @@ const Jobs = props => {
             onChangeEmploymentType={onChangeEmploymentType}
             onChangeSalaryRange={onChangeSalaryRange}
           />
-        </div>
-        <div className="job-search-container">
+        </aside>
+        <section className="job-search-container" aria-label="Job listings">
           <div className="search-input-container">
             <input
               className="search-input"
@@ -82,8 +82,8 @@ const Jobs = props => {
             salaryRange={salaryRange}
             searchInput={activeSearch}
           />
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   )
 }
