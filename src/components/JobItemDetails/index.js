@@ -108,8 +108,8 @@ const JobItemDetails = props => {
   const renderSuccessView = () => (
     <>
       <Header />
-      <div className="job-details-main-container">
-        <div className="details-container">
+      <main className="job-details-main-container">
+        <article className="details-container">
           <div className="job-header">
             <img
               className="job-image"
@@ -182,10 +182,13 @@ const JobItemDetails = props => {
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="similar-job-container">
-          <h1>Similar Jobs</h1>
+        <section
+          className="similar-job-container"
+          aria-labelledby="similar-jobs-heading"
+        >
+          <h1 id="similar-jobs-heading">Similar Jobs</h1>
           <ul className="similar-job-list">
             {similarJobs.map(eachJob => (
               <li key={eachJob.id} className="similar-job-card">
@@ -211,8 +214,8 @@ const JobItemDetails = props => {
               </li>
             ))}
           </ul>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   )
 

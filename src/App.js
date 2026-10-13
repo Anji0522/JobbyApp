@@ -1,4 +1,5 @@
 import {Route, Switch, Redirect} from 'react-router-dom'
+import './App.css'
 import Login from './components/Login'
 import Home from './components/Home'
 import Jobs from './components/Jobs'

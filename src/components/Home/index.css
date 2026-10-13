@@ -1,86 +1,74 @@
-/* Home Container */
-
 .home-container {
-  min-height: 100vh;
-  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
-  background-size: cover;
+  display: flex;
+  min-height: calc(100vh - 72px);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(48px, 9vw, 120px);
+  background-color: #111827;
+  background-image: linear-gradient(90deg, rgba(15, 23, 42, 0.94), rgba(15, 23, 42, 0.24)), url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
   background-position: center;
   background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  padding: 0 8%;
+  background-size: cover;
 }
-
-/* Heading */
 
 .heading {
-  color: #ffffff;
-  font-size: 64px;
+  max-width: 680px;
+  margin: 0 0 24px;
+  color: #f8fafc;
+  font-size: clamp(40px, 6vw, 68px);
   font-weight: 700;
-  max-width: 650px;
-  line-height: 1.2;
-  margin-bottom: 25px;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
 }
-
-/* Description */
 
 .description {
-  color: #e2e8f0;
-  font-size: 22px;
-  line-height: 1.8;
-  max-width: 650px;
-  margin-bottom: 35px;
+  max-width: 640px;
+  margin: 0 0 32px;
+  color: #dbe4f0;
+  font-size: clamp(17px, 1.8vw, 21px);
+  line-height: 1.75;
 }
 
-/* Button */
-
-.button {
+.home-button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
   background: #6366f1;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  padding: 15px 35px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.24);
+  transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
-.button:hover {
+.home-button:hover {
   background: #4f46e5;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.34);
+  transform: translateY(-2px);
 }
 
-.button:active {
-  transform: scale(0.97);
-}
-
-/* Mobile */
-
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   .home-container {
+    min-height: calc(100vh - 64px);
     align-items: center;
+    padding: 48px 24px;
     text-align: center;
-    padding: 40px 25px;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88)), url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
   }
 
   .heading {
-    font-size: 40px;
-    max-width: 100%;
+    max-width: 560px;
+    font-size: clamp(36px, 10vw, 52px);
   }
 
   .description {
-    font-size: 18px;
-    max-width: 100%;
-  }
-
-  .button {
-    width: 180px;
-    font-size: 16px;
+    max-width: 540px;
+    margin-bottom: 28px;
+    font-size: 17px;
   }
 }
