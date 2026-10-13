@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
-  background: radial-gradient(circle at top left, #312e81, transparent 44%), #0f172a;
+  background: radial-gradient(circle at top left, #312e81, transparent 44%),
+    #0f172a;
 }
 
 .logo-card {
