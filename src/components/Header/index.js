@@ -3,10 +3,10 @@ import Cookies from 'js-cookie'
 
 import './index.css'
 
-const Header = props => {
+const Header = ({history}) => {
   const onLogout = () => {
     Cookies.remove('jwt_token')
-    props.history.replace('/login')
+    history.replace('/login')
   }
 
   return (
